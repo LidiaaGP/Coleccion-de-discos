@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+:root {
+	/* Colores Azul Verdoso */
+  	--principal: #007F7E;
+  	--principalOscuro: #005D5C;
+  	--principalMuyOscuro: #004848;
+  	--principalClaro: #00A5A4;
+  	--principalMuyClaro: #00B8B7;
+  	
+	--texto: #212121; 
+	
+	/* contraste Dorado */
+  	--contraste: rgb(0, 255, 255);
+  	--contrasteOscuro: rgb(255, 0, 255);
+  	--contrasteClaro: rgb(255, 255, 255);
+  	--fuente: 'Helvetica Neue', Arial, sans-serif;
+  	--fuenteContraste: 'Georgia', 'Times New Roman', serif;
+  	
+  	--colorFondoClaro: #F5FEFE;
+  	
+  	/* Alturas de cabecera y pie */
+  	--alturaCabecera: 180px;
+  	--alturaPie: 90px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	font-family: var(--fuente);
+	color: var(--texto);
+	font-size: var(--texto);
+}
+header{
+	background-color: var(--principal);
+	height:90px;
+	display:flex;
+	flex-direction:row;
+	padding:20px;
+}
+
+#cabecera_izq{
+	width:70%;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-start;
+}
+
+.elem_menu{
+	background-color: var(--principalOscuro);
+	display: inline-block;
+	list-style: none;
+	padding-left: 0;
+}
+
+.elem_menu > a{
+	display: block;
+	background-color: var(--principalOscuro);
+	padding: 8px 30px;
+	
+	color: var(--contrasteClaro);
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.elem_menu > a:visited{
+ 	color: var(--contrasteClaro);
+}
+
+.elem_menu > a:hover{
+	 background-color: var(--principalClaro);
+	 color: var(--contrasteClaro);
+}
+
+.elem_menu > a:active{
+	 background-color: var(--contraste);
+	 color: var(--principalOscuro);
+}
+
+h1{
+	color:var(--contraste);
+	font-family: var(--fuenteContraste);
+	font-size:46px;
+}
+main{
+	background-color: pink;
+	padding: 10px;
+	min-height: calc(100vh - (var(--alturaCabecera) + var(--alturaPie)));
+	
+}
+
+#menu{
+
+	
+}
+
+table {
+   width: 70%;
+   border-collapse: collapse;
+}
+
+th, td {
+   text-align: left;
+}
+
+th {
+   background-color: #f2f2f2;
+  }
+
+tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+a {
+   text-decoration: none;
+   margin-right: 10px;
+}
+nav{
+	background-color: var(--principalOscuro);
+}
+
+footer{
+	height:var(--alturaPie);
+	background-color: var(--principal);
+
+}
+

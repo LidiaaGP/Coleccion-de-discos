@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*
+Estilos de la pagina Index.
+*/
+
+section{
+	background-color:rgb(242, 179, 201);
+	height:70px;
+	width: 1000px;
+}
